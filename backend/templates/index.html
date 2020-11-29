@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create a Blood Request Form</h1>
+    <form method="post">
+        {%csrf_token%}
+       BloodType: <input type="text" name="blood_type"> <br>
+       Description: <input type="text" name="description"> <br>
+       Stock: <input type="number" name="stock"> <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

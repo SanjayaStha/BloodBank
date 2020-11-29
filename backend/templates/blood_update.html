@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blood update</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        {{blood}}
+       BloodType: <input type="text" name="blood_type" value={{blood.blood_type}}> <br>
+       Description: <input type="text" name="description" value={{blood.description}}> <br>
+       Stock: <input type="number" name="stock" value={{blood.stock}}> <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
